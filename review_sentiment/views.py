@@ -47,8 +47,8 @@ def result(request):
 
     res = ""
     if(my_prediction==0):
-        res="THE ENTERED REVIEW IS NOT GOOD"
+        res="OOPS!!!! You Got A BAD REVIEW"
     else:
-        res="THE ENTERED REVIEW IS GOOD"
+        res="Congrats It's A GOOD REVIEW"
 
     return render(request,'result.html',{'res':res})
